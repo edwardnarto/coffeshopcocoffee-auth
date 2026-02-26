@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO.Coffee</title>
+    <link rel="stylesheet" href="coffeeshop.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+                                                          
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <h1>CO.COFFEE</h1>
+        </div>
+
+        <div class="navbar-information">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about us">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+       <div class="navbar-icon">
+
+    <a id="login-btn" class="login-btn">
+        <i data-feather="user"></i>
+    </a>
+
+    <a id="cart-icon" class="cart-btn">
+        <i data-feather="shopping-cart"></i>
+        <span id="cart-count">0</span>
+    </a>
+
+</div>
+
+    </nav>
+
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>A cup that feels just right</h1>
+            <p>Simple. Warm. Perfectly brewed</p>
+            <a href="#buynow" class="cta">Buy Now</a>
+        </main>
+    </section>
+
+    <section id="menu">
+  <div class="" id="buynow">
+
+    <h2 class="Judul-Menu">Our Best Seller</h2>
+
+    <div id="coffeeCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+        
+
+        <div class="carousel-item active">
+          <div class="row g-4">
+
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="kopi1.png" class="">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Café Latte</h5>
+                  <p class="card-text">Rp30.000,00</p>
+                  <button class="btn btn-warning w-100" onclick="tambahKeKeranjang('Café Latte')">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="kopi2.png" class="">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Milk Coffee</h5>
+                  <p class="card-text">Rp38.000,00</p>
+                  <button class="btn btn-warning w-100" onclick="tambahKeKeranjang('Milk Coffee')">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="kopi3.png" class="">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Chocolate Frappé</h5>
+                  <p class="card-text">Rp45.000,00</p>
+                  <button class="btn btn-warning w-100" onclick="tambahKeKeranjang('Chocolate Frappé')">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="carousel-item">
+          <div class="row g-4">
+
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="kopi4.png.jpg" class="">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Iced Matcha Latte</h5>
+                  <p class="card-text">Rp55.000,00</p>
+                  <button class="btn btn-warning w-100" onclick="tambahKeKeranjang('Iced Matcha Latte')">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="kopi6.png.jpg" class="">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Caramel Macchiato</h5>
+                  <p class="card-text">Rp50.000,00</p>
+                  <button class="btn btn-warning w-100" onclick="tambahKeKeranjang('Caramel Macchiato')">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="kopi8.jpg" class="">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Americano</h5>
+                  <p class="card-text">Rp25.000,00</p>
+                  <button class="btn btn-warning w-100" onclick="tambahKeKeranjang('Americano')">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+  
+        <div class="carousel-item">
+          <div class="row g-4">
+
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="kopi9.jpg" class="">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Espresso</h5>
+                  <p class="card-text">Rp15.000,00</p>
+                  <button class="btn btn-warning w-100" onclick="tambahKeKeranjang('Espresso')">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="kopi10.jpg" class="">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Iced Flat Latte</h5>
+                  <p class="card-text">Rp40.000,00</p>
+                  <button class="btn btn-warning w-100" onclick="tambahKeKeranjang('Ice Flat Latte')">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="kopi11.png" class="">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Caramel Macchiato</h5>
+                  <p class="card-text">Rp59.000,00</p>
+                 <button class="btn btn-warning w-100" onclick="tambahKeKeranjang('Caramel Macchiato')">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#coffeeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#coffeeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="our-story" class="our-story-section">
+  <div class="container-lg py-5">
+
+    <div class="row align-items-center g-5">
+
+  
+      <div class="col-md-6">
+        <div class="story-image-wrapper">
+          <img src="OurStory.jpg"
+               alt="Coffee Story" class="img-fluid story-img">
+        </div>
+      </div>
+
+  
+      <div class="col-md-6 text-white">
+        <h2 class="story-title">So, why Co.Coffee?</h2>
+        <p class="story-text">
+        Because this isn’t just another place to grab a drink and go.
+        It’s a space — a little home away from home — where people show up, conversations flow, and something real happens over a cup of coffee.
+
+        Here, you don’t just drink coffee. You feel it.
+        Every bean is chosen with care. Every cup has a purpose.
+        From distinct flavors to smooth finishes, we keep it fresh, honest, and full of personality — just like the people who walk through our doors.
+        </p>
+        <p class="story-text">
+        We’re here to bring people closer — and serve damn good coffee while we’re at it.
+
+        Welcome to Co Coffee Hub.
+        Let’s keep it real. Let’s make it matter.
+        </p>
+
+        <button class="btn btn-light px-4 mt-3">
+          Learn More
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="gallery" class="gallery-section">
+  <div class="container">
+    <h2 class="Judul-Gallery">Our Cozy Corner</h2>
+
+    <div class="masonry">
+      <a href=""><img src="Gallery1.jpg"></a>
+      <a href=""><img src="Gallery2.jpg"></a>
+      <a href=""><img src="Gallery3.jpg"></a>
+      <a href=""><img src="Gallery4.jpg"></a>
+      <a href=""><img src="Gallery5.jpg"></a>
+      <a href=""><img src="Gallery6.jpg"></a>
+      <a href=""><img src="Gallery7.jpg"></a>
+      <a href=""><img src="Gallery8.jpg"></a>
+      <a href=""><img src="Gallery9.jpg"></a>
+    </div>
+    
+  </div>
+</section>
+
+<section id="about us" class="about-section">
+  <div class="about-container">
+
+    <div class="about-image">
+      <img src="AboutUs.jpg" alt="Coffee shop">
+    </div>
+
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        Co Coffee Hub is crafted as a refined retreat — a place where meaningful moments unfold over thoughtfully curated coffee. 
+        Every bean is selected with intention, every cup created with purpose, ensuring a flavor experience that is elegant, honest, 
+        and distinctly ours.
+      </p>
+
+      <p>
+        We believe coffee is more than a beverage; it is a ritual, a connection, a quiet luxury. Within our space, conversations flow, 
+        people come together, and authenticity finds its place.
+      </p>
+
+      <p>
+        At Co Coffee Hub, we are dedicated to bringing people closer while serving exceptional coffee made with care and character.
+        Real craft. Real moments. Made to matter.
+      </p>
+
+      <div class="about-highlights">
+        <div class="highlight-box">
+          <h4>Curated Coffee Craft</h4>
+          <p>Every bean is selected with intention to deliver a refined flavor experience.</p>
+        </div>
+
+        <div class="highlight-box">
+          <h4>Purposeful Brewing</h4>
+          <p>Each cup is created with care, character, and an honest dedication to quality.</p>
+        </div>
+
+        <div class="highlight-box">
+          <h4>A Space for Real Moments</h4>
+          <p>A quiet, elegant retreat where connection and authenticity naturally flow.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+
+    <div class="contact-left">
+      <h2>Contact Us:</h2>
+      <p>We'd Love to Hear from You!</p>
+      <p>Have a question about our products, your order, or anything else? Reach out to us below:</p>
+
+      <p><strong>Email:</strong> Co.Coffee@gmail.com</p>
+      <p><strong>Phone:</strong> +62 81295739850</p>
+      <p><strong>Location:</strong> Medan, Indonesia</p>
+    </div>
+
+
+    <div class="contact-right">
+      <div class="contact-logo-wrapper">
+    <img src="LogoKopi.jpg" class="contact-logo-image">
+    </div>
+</div>
+
+  </div>
+</section>
+
+    <script>
+      feather.replace();
+    </script>
+    
+    <script src="script.js"></script>
+
+    <div id="toast-notif" class="toast-popup-simple">
+    <span id="toast-msg"></span>
+</div>
+
+<!-- CART MODAL (punya kamu yang lama) -->
+<div class="cart-modal" id="cart-modal">
+  <div class="cart-box">
+    <h2>Your Cart</h2>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-total">
+      Total: $<span id="cart-total">0</span>
+    </div>
+
+    <button id="checkout-btn" class="checkout-btn">Checkout</button>
+
+    <button id="close-cart" class="close-cart">Close</button>
+  </div>
+</div>
+
+
+<!-- LOGIN REGISTER MODAL (WAJIB DI LUAR cart-modal) -->
+<div class="modal fade" id="authModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Account Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <!-- FORGOT PASSWORD -->
+<div id="forgot-form" style="display:none;">
+
+  <input type="email"
+         id="forgot-email"
+         class="form-control mb-2"
+         placeholder="Masukkan Email">
+
+  <button class="btn btn-warning w-100 mb-2"
+          onclick="sendOTP()">
+          Kirim OTP
+  </button>
+
+  <input type="text"
+         id="otp-input"
+         class="form-control mb-2"
+         placeholder="Masukkan OTP">
+
+  <input type="password"
+         id="new-password"
+         class="form-control mb-2"
+         placeholder="Password Baru">
+
+  <button class="btn btn-success w-100"
+          onclick="resetPassword()">
+          Reset Password
+  </button>
+
+  <p class="text-center mt-2">
+    <a href="#" onclick="showLogin()">Kembali ke Login</a>
+  </p>
+
+</div>
+
+        <!-- LOGIN -->
+        <div id="login-form">
+
+          <input type="email"
+                 id="login-email"
+                 class="form-control mb-2"
+                 placeholder="Email">
+
+          <input type="password"
+                 id="login-password"
+                 class="form-control mb-2"
+                 placeholder="Password">
+
+          <button class="btn btn-dark w-100 mb-2"
+                  onclick="loginUser()">
+                  Login
+          </button>
+
+          <p class="text-center">
+            Belum punya akun?
+            <a href="#" onclick="showRegister()">Register</a>
+          </p>
+
+          <p class="text-end">
+  <a href="#" onclick="showForgot()">Lupa Password?</a>
+</p>
+
+        </div>
+
+
+        <!-- REGISTER -->
+        <div id="register-form" style="display:none;">
+
+          <input type="text"
+                 id="register-name"
+                 class="form-control mb-2"
+                 placeholder="Nama">
+
+          <input type="email"
+                 id="register-email"
+                 class="form-control mb-2"
+                 placeholder="Email">
+
+          <input type="password"
+                 id="register-password"
+                 class="form-control mb-2"
+                 placeholder="Password">
+
+          <button class="btn btn-success w-100 mb-2"
+                  onclick="registerUser()">
+                  Register
+          </button>
+
+          <p class="text-center">
+            Sudah punya akun?
+            <a href="#" onclick="showLogin()">Login</a>
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
